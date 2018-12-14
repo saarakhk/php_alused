@@ -28,7 +28,7 @@ for($arv = 1; $arv <= 10; $arv++){
     }*/
 
     $varv = ($arv % 2 == 0) ? 'green' : 'red';
-    echo '<div style="color: >'.$arv.'</div>';
+    echo '<div style="color: '.$varv.'">'.$arv.'</div>';
 
 }
 
@@ -102,6 +102,52 @@ echo '<table>';
                 echo '</td>';
             }
     }
+    echo '</table>';
 
 echo '<hr>';
+
+// WHILE TSÜKKEL
 // ülesanne: liida kokku arvud 1234 et vastus oleks 10, kasutades while tsükklit?
+
+    /* while(tingimus){
+        tegevused, mis toimuvad nii kaua kuni
+        tingimus kehtib
+    }
+   */
+echo '<h5>Ülesanne 4</h5>';
+$arv4 = 1234;
+$summa = 0;
+while($arv4 != 0) {
+    $number = $arv4 % 10;
+    echo 'Number = '.$number.'<br>';
+    $arv4 = $arv4 / 10;
+    echo 'Arv float = '.$arv4.'<br>';
+    settype($arv4, 'int');
+    echo 'Arv int = '.$arv4.'<br>';
+    // $summa = $summa + $number;
+    $summa += $number;
+    echo '<hr>';
+}
+echo 'Arvu numbrite summa = '.$summa.'<br>';
+
+echo '<hr>';
+
+echo '<h5>Ülesanne 5</h5>';
+
+// tee programm, mis ütleb, mitu 5 on antud arvu sees. nt $arv = 48557812535
+
+$arv5 = 48557812535;
+$kordamine = 0;
+
+while($arv5 != 0) {
+    $number1 = $arv5 % 10;
+    echo 'Number = '.$number1.'<br>';
+    $arv5 = $arv5 / 10;
+    echo 'Arv float = '.$arv5.'<br>';
+    settype($arv5, 'int');
+    echo 'Arv int = '.$arv5.'<br>';
+    if($number1 == 5) $kordamine++;
+    echo '<hr>';
+}
+echo 'Number 5 esineb '.$kordamine.' korda<br>';
+
