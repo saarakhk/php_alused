@@ -47,3 +47,60 @@ if ($arv2 >= 0 and $arv2 < 25) {
 }
 
 echo '<hr>';
+
+?>
+
+<style
+/* switch (kontroll) {
+        case vastus:
+            tegevused, mis anutud case puhul toimivad
+            break;
+        default:
+            tegevused, mmis otimuvad siis kui mdiagi muud ei sobi
+            break;
+
+}
+*/
+
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: solid 1px black;
+    }
+</style>
+<?php
+
+// header('Refresh: 2');
+echo '<h5>Ülesanne 3 - valgusfoor</h5>';
+
+$aktiivne = 'kollane';
+
+switch ($aktiivne) {
+    case 'punane':
+        echo '<div style="background-color: red"></div>';
+        echo '<div style=""></div>';
+        echo '<div style=""></div>';
+        break;
+    case 'kollane':
+
+        echo '<div style=""></div>';
+        echo '<div style="background-color: yellow"></div>';
+        echo '<div style=""></div>';
+        break;
+    case 'roheline':
+
+        echo '<div style=""></div>';
+        echo '<div style=""></div>';
+        echo '<div style="background-color: green"></div>';
+        break;
+    default:
+        echo '<div style=""></div>';
+        echo '<div style="background-color: yellow"></div>';
+        echo '<div style=""></div>';
+        break;
+
+}
+
+?>
