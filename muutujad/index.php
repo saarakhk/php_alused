@@ -27,7 +27,7 @@ echo '<hr>';
 
 echo gettype($sone);
 echo '<br>';
-$summa = $sone + $sone;
+$summa = $sone.$sone;
 // $settype($summa, type:'string');
 echo gettype($summa);
 echo 'summa = '.$summa.'<br>';
