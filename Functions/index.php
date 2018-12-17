@@ -14,3 +14,12 @@ function bighello() {
     print "<h1>HELLO!</h1>";
 }
 bighello();
+
+// funktsioon argumentidega
+
+function printBR($txt) {
+    print ("$txt<br>\n");
+}
+printBR("this is a line");
+printBR("this is a new line");
+printBR("this is yet another line");
