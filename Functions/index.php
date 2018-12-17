@@ -70,3 +70,17 @@ function meaningOfLife2() {
 }
 meaningOfLife2();
 
+// Muutuja väärtuse säilitamine global instruktsiooni abil
+
+$num_of_calls = 0;
+function andAnotherThing($txt){
+    global $num_of_calls;
+    $num_of_calls++;
+    print "<h1>$num_of_calls. $txt</h1>";
+}
+andAnotherThing("Midagi");
+print ("Ehitame midagi");
+andAnotherThing("Blabla ");
+print("Parimad ");
+andAnotherThing("Kolmas ");
+print("number kolm ");
