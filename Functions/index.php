@@ -52,3 +52,11 @@ function test() {
 }
 print "test var: $testvar<br>";
 
+// funktsioon pöördub muutuja poole, mis on defineeritud väljaspoolt antud funktsiooni
+
+$life = 42;
+
+function meaningOfLife() {
+    print "Thea meaning of life is $life <br>";
+}
+meaningOfLife();
