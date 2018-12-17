@@ -84,3 +84,18 @@ andAnotherThing("Blabla ");
 print("Parimad ");
 andAnotherThing("Kolmas ");
 print("number kolm ");
+
+// static instruktsiooni kasutamine
+
+function andAnotherThing2($txt) {
+    static $num_of_calls2 = 0;
+    $num_of_calls2++;
+    print "<h1>$num_of_calls2.$txt</h1>";
+}
+
+andAnotherThing2("Mäletame");
+print ("Ehitame midagi");
+andAnotherThing2("eelmist ");
+print("Parimad ");
+andAnotherThing2("numbrit ");
+print("number kolm ");
