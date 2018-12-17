@@ -42,3 +42,13 @@ function sayHello() {
 
 $function_holder = "sayHello";
 $function_holder();
+
+// muutujate nähtavuse piirkond
+
+// Muutuja, mis on loodud funktsiooni sees, ei ole kättesaadav väljaspoolt antud funktsiooni
+
+function test() {
+    $testvar = "this is a test var";
+}
+print "test var: $testvar<br>";
+
