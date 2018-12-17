@@ -60,3 +60,13 @@ function meaningOfLife() {
     print "Thea meaning of life is $life <br>";
 }
 meaningOfLife();
+
+// Juurdepääs globaalsele muutujale global instruktsiooni abil
+
+$life2 = 42;
+function meaningOfLife2() {
+    global $life2;
+    print "Thea meaning of life is $life2 <br>";
+}
+meaningOfLife2();
+
