@@ -85,6 +85,7 @@ print("Parimad ");
 andAnotherThing("Kolmas ");
 print("number kolm ");
 
+echo '<hr>';
 // static instruktsiooni kasutamine
 
 function andAnotherThing2($txt) {
@@ -99,3 +100,21 @@ andAnotherThing2("eelmist ");
 print("Parimad ");
 andAnotherThing2("numbrit ");
 print("number kolm ");
+
+echo '<br>';
+echo '<br>';
+
+
+// ARGUMENDID
+
+// Funktsioon, mis kasutab kahte argumenti
+
+function fontWrap($txt, $size) {
+    print "<font size=\"$size\" face=\"Helvetica, Arial, Sans-Seriff\">$txt</font>";
+}
+fontWrap("A heading <br>", 5);
+fontWrap("kiri kiri kiri <br>", 3);
+fontWrap("veel mingi kiri <br>", 3);
+fontWrap("jutt kiri jutt <br>", 3);
+
+// Funktsioon mittekohustuslikku argumendiga
