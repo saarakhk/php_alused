@@ -118,3 +118,14 @@ fontWrap("veel mingi kiri <br>", 3);
 fontWrap("jutt kiri jutt <br>", 3);
 
 // Funktsioon mittekohustuslikku argumendiga
+
+function fontWrap2($txt, $size=3) {
+    print "<font size=\"$size\" face=\"Helvetica, Arial, Sans-Seriff\">$txt</font>";
+}
+
+fontWrap2("A heading <br>", 5);
+fontWrap2("kiri kiri kiri <br>");
+fontWrap2("kiri kiri kiri <br>");
+fontWrap2("kiri kiri kiri <br>");
+
+
