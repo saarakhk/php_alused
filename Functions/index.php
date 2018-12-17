@@ -31,4 +31,14 @@ function addNums($firstnum, $secondnum) {
 }
 print "viis pluss viis on = ".addNums(5, 5);
 
+echo '<br>';
+echo '<br>';
 
+// funkstiooni dünaamilised väljakutsed
+
+function sayHello() {
+    print "hello<br>";
+}
+
+$function_holder = "sayHello";
+$function_holder();
