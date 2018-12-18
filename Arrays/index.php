@@ -33,20 +33,26 @@ $kasutajad1 = array(
     )
 );
 
+echo '<hr>';
+echo '<table style="border: solid 1px">';
+echo '<tr>
+            <th>kasutaja</th>
+            <th>Eesnimi</th>
+            <th>Perenimi</th>
+            <th>Sugu</th>
+       </tr>';
 foreach ($kasutajad1 as $kasutaja1) {
-    foreach ($kasutaja1 as $element) {
+    echo '<tr>';
         for($i = 0; $i < count($kasutaja1); $i++){
             if($kasutaja1[3] == 'female') {
-                echo '<div style="color: tomato">';
+                echo '<td style="background: tomato">';
             } else {
-                echo '<div style="color: cornflowerblue">';
+                echo '<td style="background: cornflowerblue">';
             }
-            echo $kasutaja1[$i].'</div>';
+            echo $kasutaja1[$i].'</td>';
         }
         echo '<hr>';
     }
-
-}
 // lisavõimalused massivitöötluseks
 // php.net/manual/en/book.array.php
 
