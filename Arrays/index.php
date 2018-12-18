@@ -31,6 +31,12 @@ $kasutajad1 = array(
     )
 );
 
+foreach ($kasutajad1 as $kasutaja1) {
+    foreach ($kasutaja1 as $element) {
+        echo $element.'<br>';
+    }
+    echo '<hr>';
+}
 // lisavõimalused massivitöötluseks
 // php.net/manual/en/book.array.php
 
@@ -38,4 +44,6 @@ echo '<hr>';
 echo '<pre>';
 print_r($kasutajad1);
 echo '</pre>';
+
+
 
