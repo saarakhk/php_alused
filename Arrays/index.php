@@ -8,4 +8,8 @@ $kasutajad = array(
     'lucy'
 );
 
-echo $kasutajad [0];
+// väljastamine
+
+for ($i = 0; $i < count($kasutajad); $i++) {
+    echo $i.' - '.$kasutajad[$i].'<br>';
+};
