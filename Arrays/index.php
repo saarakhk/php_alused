@@ -22,20 +22,30 @@ $kasutajad1 = array(
     array (
         'alice',
         'Alice',
-        'Liddle'
+        'Liddle',
+        'female'
     ),
     array (
         'bob',
         'Bob',
-        'Builder'
+        'Builder',
+        'male'
     )
 );
 
 foreach ($kasutajad1 as $kasutaja1) {
     foreach ($kasutaja1 as $element) {
-        echo $element.'<br>';
+        for($i = 0; $i < count($kasutaja1); $i++){
+            if($kasutaja1[3] == 'female') {
+                echo '<div style="color: tomato">';
+            } else {
+                echo '<div style="color: cornflowerblue">';
+            }
+            echo $kasutaja1[$i].'</div>';
+        }
+        echo '<hr>';
     }
-    echo '<hr>';
+
 }
 // lisavõimalused massivitöötluseks
 // php.net/manual/en/book.array.php
