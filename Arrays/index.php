@@ -18,13 +18,21 @@ foreach ($kasutajad as $kasutaja) {
 echo '<hr>';
 echo '<br>';
 
-$kasutajad1 = array();
+$kasutajad1 = array(
+    array (
+        'alice',
+        'Alice',
+        'Liddle'
+    ),
+    array (
+        'bob',
+        'Bob',
+        'Builder'
+    )
+);
 
-array_push($kasutajad1,'lucy');
-$kasutajad1[] = 'alice';
-$kasutajad1[] = 'bob';
-
-sort($kasutajad1);
+// lisavõimalused massivitöötluseks
+// php.net/manual/en/book.array.php
 
 echo '<hr>';
 echo '<pre>';
