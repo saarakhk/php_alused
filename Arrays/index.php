@@ -20,19 +20,14 @@ echo '<br>';
 
 $kasutajad1 = array();
 
+array_push($kasutajad1,'lucy');
 $kasutajad1[] = 'alice';
 $kasutajad1[] = 'bob';
 
-array_push($kasutajad1,'lucy');
-
-foreach ($kasutajad1 as $kasutaja1) {
-    echo $kasutaja1.'<br>';
-}
+sort($kasutajad1);
 
 echo '<hr>';
-array_shift($kasutajad1);
-array_pop($kasutajad1);
+echo '<pre>';
+print_r($kasutajad1);
+echo '</pre>';
 
-foreach ($kasutajad1 as $kasutaja1) {
-    echo $kasutaja1.'<br>';
-}
