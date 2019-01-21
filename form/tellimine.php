@@ -22,4 +22,14 @@ $koonuseH = $_GET['kH'];
 $koonuseV = 1/3 * $koonuseSp * $koonuseH;
 
 echo 'Koonuse ruumala on: ' .$koonuseV;
+echo '<br>';
+
+// Silindri ruumala arvutamine
+
+$silindriSp = $_GET['sSp'];
+$silindriH = $_GET['sH'];
+$silindriV = $silindriSp * $silindriH;
+
+echo 'Silindri ruumala on: ' .$silindriV;
+echo '<br>';
 ?>
