@@ -6,12 +6,11 @@
  * Time: 12:29
  */
 
-// Ülesanne 3 - vormi loomine
+// Ülesanne 3
 
-// lisab vormist saadud andmed muutujasse
-$toode1 = $_GET['t1']
+// kera ruumala arvutamine
+$keraRaadius = $_GET['t1'];
+$keraRuumala = 4/3 * 3.14 * ($_GET['t1'] * $_GET['t1'] * $_GET['t1']);
+echo 'Kera ruumala on: '.$keraRuumala;
 
-echo 'Toode 1: '.$toode1. 'tk';
 ?>
-
-<h1>Tellimine</h1>
