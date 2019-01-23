@@ -55,4 +55,11 @@ echo '<br>';
 $vanus = mktime(0, 0, 0, 11, 0, 2019-24);
 echo date('d.m.Y', $vanus);
 echo '<br>';
+
+// kuupäevade arvutamine inglise keelsete lausetega
+
+echo strtotime("+1 day");
+echo '<br>';
+echo strtotime("+1 week 2 days 4 hours 2 seconds"), "\n";
+
 ?>
