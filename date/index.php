@@ -61,5 +61,13 @@ echo '<br>';
 echo strtotime("+1 day");
 echo '<br>';
 echo strtotime("+1 week 2 days 4 hours 2 seconds"), "\n";
+echo '<br>';
 
+/* kuupäeva valideerimine */
+
+if (checkdate(12, 23, 2013)) {
+    echo ('kuupäev korras!');
+} else {
+    echo ('kuupäev on valesti sisestatud');
+}
 ?>
