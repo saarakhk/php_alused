@@ -15,7 +15,18 @@ echo time();
 
 echo date('d.m.Y G:i');
 
-/* ajavöönd - märkides ära ajavööndi saab selle kellaja, mis ajavööndi sa valid */
+/* ajavöönd */
 
-date_default_timezone_get('Europe/Tallinn');
+date_default_timezone_set('Europe/Tallinn');
+
+/* pika kuupäeva eestistamine */
+
+// kuude massiv
+$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+//kuupeva väljastamine
+echo $paev.'.'.$kuu.' '.$aasta;
 ?>
