@@ -48,5 +48,11 @@ echo date('d.m.Y G:i' , time()+60);
 echo date('d.m.Y G:i' , time()+60*60);
 // 24h pärast
 echo date('d.m.Y G:i' , time()+60*60*24);
+
+echo '<br>';
+// tehted kuupäevadega: arvutan oma sünnipäeva kui tean vanust
+
+$vanus = mktime(0, 0, 0, 11, 0, 2019-24);
+echo date('d.m.Y', $vanus);
 echo '<br>';
 ?>
