@@ -29,4 +29,10 @@ $kuu = $eesti_kuud[date('n')];
 $aasta = date('Y');
 //kuupeva väljastamine
 echo $paev.'.'.$kuu.' '.$aasta;
+
+/* muu soovitud kuupäeva genereerimine */
+
+$minu_synnipaev = mktime(0, 0, 0, 11, 3, 1995);
+echo date('d.m.Y', $minu_synnipaev);
+
 ?>
