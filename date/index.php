@@ -15,4 +15,7 @@ echo time();
 
 echo date('d.m.Y G:i');
 
+/* ajavöönd - märkides ära ajavööndi saab selle kellaja, mis ajavööndi sa valid */
+
+date_default_timezone_get('Europe/Tallinn');
 ?>
