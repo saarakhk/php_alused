@@ -94,5 +94,18 @@ $jaanipaev = mktime(0,0,0,6,24,2019);
 $tanapaev = time();
 $jaanipaevani = $jaanipaev - $tanapaev;
 echo '2019 aasta jaanipäevani on jäänud '. floor($jaanipaevani /60/60/24).' päeva!';
+echo '<br>';
+
+// minu sünnipäev on 06.11.1980, leia kumb on meist vanem. Kuva mõlema sünnipäevad ning vahe aastates
+$metshein = mktime(0, 0, 0,11, 6, 1980);
+$minusynna = mktime(0, 0, 0, 11, 3, 1995);
+
+$vahe1 = date('Y', $metshein);
+$vahe2 = date('Y', $minusynna);
+$vahe3 = $vahe2 - $vahe1;
+
+echo 'Metsheina sünnipäev on '.date('d.m.Y', $metshein).' ja minu sünnipäev on '.date('d.m.Y', $minusynna).', meie vanusevahe on '.$vahe3.' aastat. Seega on Metshein minust vanem.';
+echo '<br>';
+
 
 ?>
