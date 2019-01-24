@@ -128,6 +128,18 @@ $jarkaAasta = date('Y', $uusAasta);
     else {
         echo 'Saara, sul ei ole juubelit aastal '.$jarkaAasta;
     }
+echo '<br>';
+    // Koosta kood, mis tervitab sind vastavalt ajale
+
+$time = date("H");
+
+if ($time < 13) {
+    echo 'Tere hommikust!';
+} elseif ($time < 17) {
+    echo 'Ilusat päeva!';
+} else {
+    echo 'Kaunist õhtu jätku!';
+}
 
 
 ?>
