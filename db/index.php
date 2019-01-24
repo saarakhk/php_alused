@@ -30,3 +30,12 @@ echo '<pre>';
 print_r($users);
 
 echo 'Tere, '.$users[0]['first_name'].' '.$users[0]['last_name'].'<br>';
+
+// select tüüpi sql tetsimine
+
+$sql = 'SELECT NOW()';
+$aeg = getData($sql, $iktConn);
+echo '<pre>';
+print_r($aeg);
+
+echo $aeg[0]['NOW()'].'<br>';
