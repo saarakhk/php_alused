@@ -107,5 +107,27 @@ $vahe3 = $vahe2 - $vahe1;
 echo 'Metsheina sünnipäev on '.date('d.m.Y', $metshein).' ja minu sünnipäev on '.date('d.m.Y', $minusynna).', meie vanusevahe on '.$vahe3.' aastat. Seega on Metshein minust vanem.';
 echo '<br>';
 
+// maailmalõpp saabub 29.02.2016! Las PHP otsustab, kas see on võimalik.
+// ma ei oska seda ülesannet teha...
+
+// leia, kas sul on järgmine aasta juubel
+
+//leian oma sünniaasta
+$minusynna = mktime(0, 0, 0, 11, 3, 1995);
+$minuaasta = date('Y', $minusynna);
+echo 'Minu sünniaasta on: '.$minuaasta;
+echo '<br>';
+
+// leian järgmise aasta praegusest aastast
+$uusAasta = strtotime("+1 year");
+$jarkaAasta = date('Y', $uusAasta);
+// üritan teha funktsiooni, mis kontrollib, kas mul on juubel tulemas
+    if ($jarkaAasta%5 === 0 or $jarkaAasta%10 === 0) {
+        echo 'Saara, sul on juubel tulemas aastal '.$jarkaAasta;
+    }
+    else {
+        echo 'Saara, sul ei ole juubelit aastal '.$jarkaAasta;
+    }
+
 
 ?>
