@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: saara.vallik
- * Date: 24.01.2019
- * Time: 14:34
- */
+
+// andmed HTML vormi poolt
+
+$username = $_GET['uname'];
+$password = $_GET['upass'];
+
+echo $username.' '.$password;
