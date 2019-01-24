@@ -70,4 +70,9 @@ if (checkdate(12, 23, 2013)) {
 } else {
     echo ('kuupäev on valesti sisestatud');
 }
+
+echo '<br>';
+
+
+
 ?>
