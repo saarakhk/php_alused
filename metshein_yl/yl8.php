@@ -19,4 +19,7 @@ $tana = $nadalapaevad[date('w', time())];
 echo $tana;
 echo '<br>';
 
+// kuva eestikeelne kuupäev koos nädalapäevaga. Nt 23. veebruar 2013 laupäev
+
+
 ?>
