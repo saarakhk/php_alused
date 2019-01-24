@@ -89,4 +89,10 @@ echo '<br>';
 echo $paev.'.'.$kuu.' '.$aasta.' '.$tana;
 echo '<br>';
 
+//Leia mitu päeva on jäänud järgmise jaanipäevani
+$jaanipaev = mktime(0,0,0,6,24,2019);
+$tanapaev = time();
+$jaanipaevani = $jaanipaev - $tanapaev;
+echo '2019 aasta jaanipäevani on jäänud '. floor($jaanipaevani /60/60/24).' päeva!';
+
 ?>
