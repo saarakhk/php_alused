@@ -34,3 +34,24 @@ echo strip_tags($tekst33);
 echo '<br>';
 echo strip_tags($tekst33, '<b>, <br>');
 echo '<br>';
+
+// tekst kui massiiv
+$tekst4='All thinking men are atheists';
+echo $tekst4[0];
+echo '<br>';
+echo $tekst4[4];
+echo '<br>';
+echo substr($tekst4, 3, 5);
+echo '<br>';
+echo substr($tekst4, 4, -13);
+echo '<br>';
+echo substr($tekst4, -8, 7);
+echo '<br>';
+print_r(str_word_count($tekst4, 1));
+echo '<br>';
+$sona = str_word_count($tekst4, 1);
+echo $sona[2];
+echo '<br>';
+print_r(str_word_count($tekst4, 2));
+echo '<br>';
+
