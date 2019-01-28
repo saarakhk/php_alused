@@ -94,3 +94,4 @@ $otsi2 = array('lehm', 'saba', 'taga');
 $asenda2 = array('koer', 'nina', 'ees');
 echo str_replace($otsi2, $asenda2, $tekst7);
 echo '<br>';
+
