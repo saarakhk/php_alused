@@ -71,3 +71,26 @@ while($leia_tekstist3 = strpos($tekst5, $nihe)){
     $nihe = $leia_tekstist3+strlen($otsitav);
 }
 echo '<br>';
+
+// teksti asendamine
+$tekst6 = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav_algus = 4;
+$otsitav_pikkus = 4;
+echo substr_replace($tekst6, $asendus, $otsitav_algus, $otsitav_pikkus);
+echo '<br>';
+$otsitav_papa = 'papa';
+$nihe2 = 0;
+$asenduse_algus = strpos($tekst6, $otsitav_papa, $nihe2);
+$asenduse_markide_arv = strlen($otsitav_papa);
+echo substr_replace($tekst6, $asendus, $asenduse_algus, $asenduse_markide_arv);
+echo '<br>';
+$tekst7 = 'Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga';
+$otsi = 'lehm';
+$asenda = 'koer';
+echo str_replace($otsi, $asenda, $tekst7);
+echo '<br>';
+$otsi2 = array('lehm', 'saba', 'taga');
+$asenda2 = array('koer', 'nina', 'ees');
+echo str_replace($otsi2, $asenda2, $tekst7);
+echo '<br>';
