@@ -13,4 +13,9 @@ $sona_array = (str_split($sona));
 echo strtoupper(implode('.', $sona_array));
 echo '<br>';
 
-// koosta tekstiväli, mis kuvab kasutaja sisestatud sõnumeid. Kasutaja ropud sõnad asendatakse tärnidega
+// koosta tekstiväli, mis kuvab kasutaja sisestatud sõnumeid. Kasutaja ropud sõnad asendatakse tärnidega.
+$tekst = $_GET['roppus'];
+$otsitav = array('noob', 'loll', 'jobu');
+$asendus = '****';
+echo 'Ise oled üks '.str_replace($otsitav, $asendus, $tekst).'!';
+echo '<br>';
