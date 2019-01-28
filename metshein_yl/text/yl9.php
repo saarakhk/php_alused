@@ -19,3 +19,12 @@ $otsitav = array('noob', 'loll', 'jobu');
 $asendus = '****';
 echo 'Ise oled üks '.str_replace($otsitav, $asendus, $tekst).'!';
 echo '<br>';
+
+// kasutajalt saadud enimi ja pnime põhjal luuakse talle email lõpuga @khk.ee. Täpitähed asendatatkse ja kogu email on väikeste tähtedega. Nt sisend -> Saara Vällik; välujnd->saara.vallik@khk.ee
+$eesnimi = $_GET['eesnimi'];
+$perenimi = $_GET['perenimi'];
+$email = strtolower($eesnimi.'.'.$perenimi).'@khk.ee';
+$otsitav2 = array('ä', 'ö', 'ü', 'õ');
+$asendus2 = array('a', 'o', 'u', 'o');
+echo str_replace($otsitav2, $asendus2, $email);
+echo '<br>';
