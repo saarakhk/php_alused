@@ -55,3 +55,19 @@ echo '<br>';
 print_r(str_word_count($tekst4, 2));
 echo '<br>';
 
+// teksti otsimine
+$tekst5 = 'Happiness in intelligent people is the rarest thing I know';
+$otsitav = 'in';
+$leia_tekstist = strpos($tekst5, $otsitav, 0);
+echo $leia_tekstist;
+echo '<br>';
+$leia_tekstist2 = strpos($tekst5, $otsitav, 6);
+echo $leia_tekstist2;
+echo '<br>';
+// mul ei andnud kahjuks järgneva funksiooniga mingisugust vastust:
+$nihe = 0;
+while($leia_tekstist3 = strpos($tekst5, $nihe)){
+    echo $leia_tekstist3.'<br>';
+    $nihe = $leia_tekstist3+strlen($otsitav);
+}
+echo '<br>';
