@@ -24,6 +24,9 @@
     <h2>Lorem ipsum</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia feugiat mi, ac blandit purus hendrerit vel.</p>
 </div>
-<?php include('jalus.php'); ?>
+<?php
+    include('jalus.php');
+    include_once('jalus.php'); // ei käivitu, kuna on juba olemas
+?>
 </body>
 </html>
