@@ -1,7 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Saara
- * Date: 29.01.2019
- * Time: 10:42
- */
+<div id="sisu">
+    <h2>Kaart</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia feugiat mi, ac blandit purus hendrerit vel.</p>
+</div>
