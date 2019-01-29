@@ -29,11 +29,15 @@
 
 <?php
 if(!empty($_GET['leht'])){
-    include($_GET['leht'].'php');
+    $leht = htmlspecialchars($_GET['leht']);
+    if(is_file($leht.'.php')){
+        include($leht.'.php');
+    } else {
+        echo 'Valitud lehte ei eksisteeri!';
+    }
 } else {
+    ?>
 
-
-?>
 <div id="sisu">
     <h2>Avaleht</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia feugiat mi, ac blandit purus hendrerit vel.</p>
